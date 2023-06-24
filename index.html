@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+  <link rel="stylesheet" href="./assets/styles/index.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Password generator app</title>
+</head>
+<body>
+  <div class="app">
+    <h1>Password Generator</h1>
+    <div class="result">
+      <input type="text" id="password">
+      <svg class="copy" width="21" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M20.341 3.091 17.909.659A2.25 2.25 0 0 0 16.319 0H8.25A2.25 2.25 0 0 0 6 2.25V4.5H2.25A2.25 2.25 0 0 0 0 6.75v15A2.25 2.25 0 0 0 2.25 24h10.5A2.25 2.25 0 0 0 15 21.75V19.5h3.75A2.25 2.25 0 0 0 21 17.25V4.682a2.25 2.25 0 0 0-.659-1.591ZM12.469 21.75H2.53a.281.281 0 0 1-.281-.281V7.03a.281.281 0 0 1 .281-.281H6v10.5a2.25 2.25 0 0 0 2.25 2.25h4.5v1.969a.282.282 0 0 1-.281.281Zm6-4.5H8.53a.281.281 0 0 1-.281-.281V2.53a.281.281 0 0 1 .281-.281H13.5v4.125c0 .621.504 1.125 1.125 1.125h4.125v9.469a.282.282 0 0 1-.281.281Zm.281-12h-3v-3h.451c.075 0 .147.03.2.082L18.667 4.6a.283.283 0 0 1 .082.199v.451Z" fill="#A4FFAF"/></svg>
+    </div>
+   
+    <div class="generator">
+
+      <header>
+        <p>Character Length</p>
+        <p id="passl">20</p>
+      </header>
+      <input type="range" name="pass_length" id="range" min="10" max="30">
+      <ul>
+        <li>
+          <input type="checkbox" name="Uppercase" class="passcheck">
+          <label for="Uppercase">Include Uppercase Letters</label>
+
+        </li>
+        <li>
+          <input type="checkbox" name="Lowercase" class="passcheck">
+          <label for="Lowercase">Include Lowercase Letters</label>
+        </li>
+        <li>
+          <input type="checkbox" name="Numbers" class="passcheck">
+          <label for="Numbers">Include Numbers</label>
+        </li>
+        <li>
+          <input type="checkbox" name="Symbols" class="passcheck">
+          <label for="Symbols">Include Symbols</label>
+        </li>
+      </ul>
+
+      <div class="force">
+        <p>Strength</p>
+        <div id="intensity">
+          <p id="intensity_strength">Low</p>
+          <div class="intensity_level"></div>
+          <div class="intensity_level"></div>
+          <div class="intensity_level"></div>
+          <div class="intensity_level"></div>
+        </div>
+      </div>
+
+      <footer>
+        <button type="submit">
+          <p>Generate</p>
+          <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"><path fill="#24232C" d="m5.106 12 6-6-6-6-1.265 1.265 3.841 3.84H.001v1.79h7.681l-3.841 3.84z"/></svg>
+        </button>
+      </footer>
+
+      <script src="./assets/script.js"></script>
+      <script src="./assets/entropizer.js"></script>
+
+    </div>
+  </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  <!--Password Generator
+
+  P4$5W0rD!
+
+  Character Length
+
+  Include Uppercase Letters
+  Include Lowercase Letters
+  Include Numbers
+  Include Symbols
+
+  Strength
+
+  Generate-->
+
+</body>
+</html>

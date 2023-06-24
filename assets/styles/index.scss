@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.app {
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+    height: 100vh;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    
+    h1 {
+        color: rgb(226, 223, 223);
+        letter-spacing: 1px;
+    }
+
+    .result {
+        position: relative;
+        width: 100%;
+        #password {
+            width: 100%;
+            border: none;
+            background-color: #24232b;
+            height: 40px;
+            position: relative;
+            padding: 25px;
+            color: white;
+
+            &:focus {
+                outline: none;
+                
+            }
+            
+        }
+
+        svg {
+            position: absolute;
+            color: #a4ffaf;
+            right: 20px;
+            top: 12px;
+            cursor: pointer;
+        }
+    }
+    
+    .generator {
+        background-color: #24232b;
+        width: 100%;
+        padding: 25px;
+
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        gap: 15px;
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            p:nth-child(2) {
+                color: #a4ffaf;
+                font-size: 1.1rem;
+            }
+        }
+
+        #range {
+            width: 100%;
+            appearance: none;
+            background: #a4ffaf;
+            height: 5px;
+            cursor: pointer;
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                background-color: #ffffff;
+                height: 1.1rem;
+                width: 1.1rem;
+                border-radius: 20px;
+              }
+
+            &:focus::-webkit-slider-thumb {
+                border: 2px solid #a4ffaf;
+                box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+              }
+        }
+
+        ul {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            gap: 15px;
+
+            li {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 10px;
+            }
+
+            input[type="checkbox"] {
+                /* Add if not using autoprefixer */
+                -webkit-appearance: none;
+                appearance: none;
+                /* For iOS < 15 to remove gradient background */
+                background-color: transparent;
+                /* Not removed via appearance */
+                margin: 0;
+
+                font: inherit;
+                color: none;
+                width: 1.15em;
+                height: 1.15em;
+                border: 0.15em solid white;
+
+                &:checked {
+                    background-color: #a4ffaf;
+                    border: transparent;
+                    content: url("../images/icon-check.svg");
+                    padding: 3px;
+                }
+              }
+        }
+
+        .force {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #080808;
+            height: 50px;
+            width: 100%;
+            color: #6e6d74;
+
+            #intensity {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+
+                p {
+                    color: white;
+                    text-transform: uppercase;
+
+                }
+
+                div {
+                    height: 20px;
+                    width: 8px;
+                    background-color: transparent;
+                    border: solid 1px white;
+                    margin: 0px 2px 0px 2px;
+                }
+
+                .intensity_level:nth-child(2) {
+                    background-color: red;
+                }
+            }
+            
+        }
+
+        footer {
+            button {
+                width: 100%;
+                height: 50px;
+                text-transform: uppercase;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                background-color: #a4ffaf;
+
+                p {
+                    font-weight: bold;
+                    font-size: 0.9rem;
+                }
+
+
+
+
+
+
+
+
+
+                svg {
+                    margin: 15px;
+                    
+                }
+            }
+        }
+    }
+
+}
